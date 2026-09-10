@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Move - Login</title>
+ 
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5eee6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+ 
+        .login-box {
+            background: white;
+            width: 320px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+ 
+        h1 {
+            color: #5b321c;
+            margin-bottom: 5px;
+        }
+ 
+        p {
+            color: #777;
+            margin-bottom: 25px;
+        }
+ 
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+ 
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background: #6b3e26;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+ 
+        button:hover {
+            background: #4d2b1c;
+        }
+ 
+        #message {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+ 
+<body>
+ 
+    <div class="login-box">
+ 
+        <h1>☕ Brew & Move 👟</h1>
+        <p>Login to continue</p>
+ 
+        <input
+            type="text"
+            id="username"
+            placeholder="Enter Username"
+        >
+ 
+        <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+        >
+ 
+        <button onclick="login()">Login</button>
+ 
+        <div id="message"></div>
+ 
+    </div>
+ 
+    <script src="script.js"></script>
+ 
+</body>
+</html>
+ 

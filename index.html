@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <title>Brew & Move | Coffee Inspired Sneakers</title>
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+ 
+<!-- NAVIGATION -->
+<header>
+    <nav>
+        <h2 class="logo">☕ BREW & MOVE</h2>
+ 
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <button class="cart-btn" onclick="showCart()">
+                    🛒 Cart <span id="cartCount">0</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+ 
+ 
+<!-- HOME -->
+<section id="home" class="hero">
+ 
+    <div class="hero-content">
+ 
+        <p class="tagline">COFFEE × SNEAKERS</p>
+ 
+        <h1>
+            BREW YOUR STYLE.<br>
+            MOVE YOUR WAY.
+        </h1>
+ 
+        <p>
+            Coffee-inspired sneakers designed for
+            energetic mornings and everyday adventures.
+        </p>
+ 
+        <a href="#collection" class="main-btn">
+            Explore Collection
+        </a>
+ 
+    </div>
+ 
+    <div class="hero-symbol">
+        ☕
+        <span>+</span>
+        👟
+    </div>
+ 
+</section>
+ 
+ 
+<!-- COLLECTION -->
+<section id="collection">
+ 
+    <h2 class="section-title">Our Coffee Collection</h2>
+ 
+    <p class="section-description">
+        Three unique sneakers inspired by your favourite coffee flavours.
+    </p>
+ 
+ 
+    <div class="products">
+ 
+ 
+        <!-- COFFEE -->
+        <div class="card">
+ 
+            <div class="shoe-image">
+                <img src="images/coffee-shoe.jpg"
+                     alt="Classic Coffee Shoe">
+            </div>
+ 
+            <div class="card-content">
+ 
+                <p class="flavour">☕ COFFEE</p>
+ 
+                <h3>Classic Coffee</h3>
+ 
+                <p>
+                    Warm coffee-inspired colours with
+                    a comfortable everyday design.
+                </p>
+ 
+                <h4>₹2,999</h4>
+ 
+ 
+                <label>Choose Size:</label>
+ 
+                <select id="size1">
+                    <option value="">Select Size</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+ 
+ 
+                <button
+                    onclick="addToCart('Classic Coffee', 2999, 'size1')">
+                    Add to Cart
+                </button>
+ 
+            </div>
+ 
+        </div>
+ 
+ 
+ 
+        <!-- CAPPUCCINO -->
+        <div class="card">
+ 
+            <div class="shoe-image">
+                <img src="images/cappuccino-shoe.jpg"
+                     alt="Cappuccino Shoe">
+            </div>
+ 
+            <div class="card-content">
+ 
+                <p class="flavour">🥛 CAPPUCCINO</p>
+ 
+                <h3>Cappuccino Cream</h3>
+ 
+                <p>
+                    Soft and stylish design inspired by
+                    creamy cappuccino.
+                </p>
+ 
+                <h4>₹3,499</h4>
+ 
+ 
+                <label>Choose Size:</label>
+ 
+                <select id="size2">
+                    <option value="">Select Size</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+ 
+ 
+                <button
+                    onclick="addToCart('Cappuccino Cream', 3499, 'size2')">
+                    Add to Cart
+                </button>
+ 
+            </div>
+ 
+        </div>
+ 
+ 
+ 
+        <!-- MOCHA -->
+        <div class="card">
+ 
+            <div class="shoe-image">
+                <img src="images/mocha-shoe.jpg"
+                     alt="Mocha Shoe">
+            </div>
+ 
+            <div class="card-content">
+ 
+                <p class="flavour">🍫 MOCHA</p>
+ 
+                <h3>Mocha Rush</h3>
+ 
+                <p>
+                    Rich mocha-inspired colours made for
+                    bold and energetic looks.
+                </p>
+ 
+                <h4>₹3,799</h4>
+ 
+ 
+                <label>Choose Size:</label>
+ 
+                <select id="size3">
+                    <option value="">Select Size</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+ 
+ 
+                <button
+                    onclick="addToCart('Mocha Rush', 3799, 'size3')">
+                    Add to Cart
+                </button>
+ 
+            </div>
+ 
+        </div>
+ 
+    </div>
+ 
+</section>
+ 
+ 
+<!-- ABOUT -->
+<section id="about" class="about">
+ 
+    <h2>About Brew & Move</h2>
+ 
+    <p>
+        Brew & Move is a creative sneaker concept inspired by coffee.
+        Our collection combines coffee colours, flavours and modern
+        footwear designs to create a unique lifestyle experience.
+    </p>
+ 
+ 
+    <div class="features">
+ 
+        <div>
+            <span>☕</span>
+            <h3>Coffee Inspired</h3>
+            <p>
+                Designs inspired by popular coffee flavours.
+            </p>
+        </div>
+ 
+        <div>
+            <span>👟</span>
+            <h3>Modern Design</h3>
+            <p>
+                Stylish sneakers designed for everyday use.
+            </p>
+        </div>
+ 
+        <div>
+            <span>⚡</span>
+            <h3>Energy & Comfort</h3>
+            <p>
+                Made for active and energetic mornings.
+            </p>
+        </div>
+ 
+    </div>
+ 
+</section>
+ 
+ 
+<!-- CONTACT -->
+<section id="contact" class="contact">
+ 
+    <h2>Get In Touch</h2>
+ 
+    <p>
+        Want to know more about Brew & Move?
+    </p>
+ 
+    <button onclick="contactMessage()">
+        Contact Us
+    </button>
+ 
+</section>
+ 
+ 
+<!-- FOOTER -->
+<footer>
+ 
+    <h3>☕ BREW & MOVE</h3>
+ 
+    <p>
+        Coffee × Sneakers × Energy
+    </p>
+ 
+    <p>
+        © 2026 Brew & Move | Student Project
+    </p>
+ 
+</footer>
+ 
+ 
+<!-- CART POPUP -->
+<div id="cartPopup" class="cart-popup">
+ 
+    <div class="cart-box">
+ 
+        <button class="close"
+                onclick="closeCart()">×</button>
+ 
+        <h2>🛒 Your Cart</h2>
+ 
+        <div id="cartItems">
+            <p>Your cart is empty.</p>
+        </div>
+ 
+    </div>
+ 
+</div>
+ 
+ 
+<script src="script.js"></script>
+ 
+</body>
+</html>
+ 
